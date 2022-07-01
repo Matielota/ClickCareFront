@@ -1,0 +1,123 @@
+.pageOffers {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.searchBar {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.searchInput {
+  width: 15em;
+  height: 30px;
+  border-radius: 10em;
+  font-size: 1em;
+  padding: 10px;
+}
+.searchImg {
+  width: auto;
+  background-color: none;
+}
+
+.searchButton > .searchImg {
+  height: 30px;
+  background-color: none;
+}
+.searchButton:hover {
+  cursor: pointer;
+}
+
+.pageOffersIn {
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  padding: 1rem;
+  justify-content: center;
+  text-align: center;
+}
+.containerPagButton {
+  width: 54.9%;
+  height: 80px;
+  margin-left: auto;
+  margin-right: 12.5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0rem;
+}
+.buttonArrowOffers {
+  color: var(--main-first-color);
+  font-size: 45px;
+  filter: drop-shadow(1px 1px 0.5px #000);
+  cursor: pointer;
+}
+.countPag,
+#paginadoNumerico {
+  color: var(--main-first-color);
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+}
+.containerTitlesOffers {
+  width: 90%;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.lenthCity {
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+.containerOffers {
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.containerOffersLeft {
+  width: auto;
+  height: 900px;
+
+  margin-top: 2rem;
+  display: block;
+  /* background-color: aqua; */
+}
+.containerInputDate {
+}
+
+.containerInputDate {
+  display: flex;
+  justify-content: right;
+  text-align: right;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+  color: var(--main-first-color);
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+.titleFilters {
+  font-size: 30px;
+  color: var(--main-extra-color);
+}
+.containerOffersRight {
+  width: 55%;
+  height: 1380px;
+}
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}

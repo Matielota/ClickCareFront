@@ -1,0 +1,235 @@
+.container-login {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background-color: #ffffff;
+  background-image: url("../LoginForm/helpImages/abstract-blue-geometric-shapes-background\ \(1\).jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-form {
+  text-align: center;
+  width: 40%;
+  height: 520px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.title {
+  font-size: 60px;
+  color: var(--main-second-color);
+  font-family: "Nunito", sans-serif;
+}
+.container-img {
+  width: 40%;
+  height: 520px;
+
+  text-align: center;
+  /* background-color: rgb(255, 68, 0); */
+  display: inline-flex;
+}
+.sideImage {
+  position: relative;
+  width: auto;
+  height: 520px;
+}
+.span-login {
+  color: var(--main-first-color);
+  font-size: 50px;
+}
+
+.log-form {
+  margin: 2rem 2rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  align-self: flex-start;
+  font-size: 1.5rem;
+  font-family: "Nunito", sans-serif;
+  color: var(--main-second-color);
+}
+
+.email,
+.password1 {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  box-sizing: border-box;
+  -webkit-box-shadow: inset 2px 2px 7px 2px rgba(0, 0, 0, 0.78);
+  box-shadow: inset 1px 1px 5px 1px rgba(0, 0, 0, 0.78);
+}
+.error1 {
+  align-self: flex-start;
+  font-size: 0.8rem;
+  color: var(--main-second-color);
+  font-family: "Source Serif Pro", serif;
+}
+
+.title {
+  font-size: 40px;
+  color: var(--main-second-color);
+  font-family: "Nunito", sans-serif;
+}
+.principalButton {
+  margin-top: 1rem;
+  font-size: 20px;
+  color: white;
+  background-color: var(--main-first-color);
+  border: 0;
+  height: 35px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 60px;
+  filter: drop-shadow(1px 1px 1px #000);
+}
+
+.forget {
+  border: none;
+  background: none;
+  color: var(--main-first-color);
+  font-size: 0.8rem;
+  font-family: "Source Serif Pro", serif;
+}
+
+.box {
+  height: 0.7rem;
+}
+
+.labelCheck {
+  color: var(--main-first-color);
+  font-size: 0.8rem;
+  font-family: "Source Serif Pro", serif;
+}
+
+.password {
+  font-size: 0.8rem;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.register {
+  margin-top: 15px;
+  font-family: "Source Serif Pro", serif;
+  width: fit-content;
+  color: var(--main-second-color);
+  margin-right: 10px;
+}
+
+.register2 {
+  color: var(--main-first-color);
+}
+
+.regButton {
+  margin-top: 1rem;
+  font-size: 20px;
+  color: white;
+  background-color: var(--main-first-color);
+  border: 0;
+  height: 35px;
+  width: 50px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 60px;
+  filter: drop-shadow(1px 1px 1px #000);
+}
+
+.link {
+  align-self: flex-end;
+  text-decoration: none;
+  font-family: "Source Serif Pro", serif;
+}
+
+.logGoogle {
+  background: none;
+  width: 50px;
+  align-self: center;
+  border-radius: 50%;
+}
+.logGoogle:hover {
+  cursor: pointer;
+}
+.google {
+  width: 100%;
+}
+
+.reg-space {
+  display: inline-flex;
+  justify-content: center;
+}
+
+@media (max-width: 880px) {
+  .container-login {
+  }
+
+  .container-form {
+    text-align: center;
+    width: 70%;
+    height: fit-content;
+  }
+  .title {
+  }
+  .container-img {
+    display: none;
+  }
+  .sideImage {
+  }
+  .span-login {
+  }
+
+  .log-form {
+  }
+
+  .label {
+  }
+
+  .email,
+  .password1 {
+  }
+  .error1 {
+  }
+
+  .title {
+  }
+  .principalButton {
+  }
+
+  .forget {
+  }
+
+  .box {
+  }
+
+  .labelCheck {
+  }
+
+  .password {
+  }
+
+  .register {
+  }
+
+  .register2 {
+  }
+
+  .regButton {
+  }
+
+  .link {
+  }
+}

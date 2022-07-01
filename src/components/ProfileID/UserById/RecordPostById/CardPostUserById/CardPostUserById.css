@@ -1,0 +1,156 @@
+.containerCardPostUserById{
+    width: 750px;
+    height: 410px;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.73);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    margin-left: 00.5rem;
+    margin-right: 00.5rem;
+    -webkit-animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both;animation:slide-in-top .5s cubic-bezier(.25,.46,.45,.94) both;
+}
+.containerCardPostUserByIdOne{
+    display: flex;
+}
+.containerCardPostUserByIdLeftOne{
+    width: 170px;
+    height: 300px;
+    margin-right: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(240, 239, 239);
+}
+.containerCardPostUserByIdLeft{
+    position: relative;
+    top: -1.5rem;
+    left: -1.5rem;
+    width: 200px;
+    height: 220px;
+    justify-content: left;
+    text-align: left;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.682);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.407);
+}
+.subTitleCardPostUserByIdr{
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 32px;
+    color: var(--main-second-color);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    width: 270px;
+}
+.containerCardPostUserByIdRight{
+    width: 520px;
+    height: 380px;
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
+.textCardPostUserById{
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-bottom: -5px;
+    color: var(--main-extra-color);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    width: 270px;
+}
+.titleOneCardPostUserById{
+    margin-left: 8px;
+    color: var(--main-first-color);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    width: 270px;
+}
+.dateContCardPostUserById{
+    margin-right: 0rem;
+    text-align: right;
+}
+.containerSubCardPostUserByIdRight{
+    text-align: left;
+    width: 450px;
+    height: 100px;
+    
+}
+.needCardPostUserById{
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-bottom: -5px;
+    color: var(--main-extra-color);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    width: 430px;
+}
+.CardPostUserByIdRightOne{
+    display: flex;
+    justify-content: left;
+
+}
+.cardusByIdTe{
+    margin-left: 1rem;
+}
+.dateCard{
+    font-family: 'Nunito', sans-serif;
+    color: var(--main-extra-color);
+    margin-left: 1rem;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+.dayCard{
+    color: var(--main-first-color);
+}
+.dateCardPostByUser{
+    color: var(--main-first-color);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    
+}
+.dayCardPostByUser{
+    color: var(--main-extra-color);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    width: 250px;
+    
+}
+.dateCardPostByUsertwo{
+    width: 220px;
+}
+.containerSubDataByUser{
+    text-align: left;
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+    /* background-color: aqua; */
+}
+.CardPostUserByIdRightTwo{
+    margin-left: -12rem;
+    margin-bottom: 1rem;
+}
+.buttonOneCardPostUserById:hover{
+    background-color: rgb(173, 33, 33);
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.646);
+    /* color: var(--main-first-color); */
+    filter: none;
+  }
+  .containerCardPostUserByIdBotton{
+    width: 700px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+ @-webkit-keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}

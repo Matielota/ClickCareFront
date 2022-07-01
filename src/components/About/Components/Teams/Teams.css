@@ -1,0 +1,108 @@
+/**
+  .containerTeam img {
+    width: 200px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 50%;
+ }*/
+.containerTeam{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  width:100%;
+  height: auto;
+  background-color: white;
+  margin-bottom: 5%;
+}
+.cardsUp{
+  margin-top: 5%;
+  width: 80%;
+  text-align: center;
+}
+.cardsDown{
+  width: 80%;
+  text-align: center;
+}
+
+.containerCardTeam{
+    font-family: 'Nunito', sans-serif;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    width: 250px;
+    height: 350px;
+    margin-left: 1rem;
+    /* From https://css.glass */
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0px 0px 12px rgba(0, 45, 84, 0.1);
+    /*backdrop-filter: blur(9.7px);*/
+    /*-webkit-backdrop-filter: blur(9.7px);*/
+    margin-bottom: 2%;
+    border: 1px solid #EDEFF1;
+  }
+.containerImgTeam{
+  margin-left: 4rem;
+  margin-top: 2rem;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px rgba(0, 45, 84, 0.20);
+  border: 1px solid #EDEFF1;
+}
+.nameCardTeam{
+  color: var(--main-first-color);
+}
+.iconoTeam{
+  width: 35px;
+  height:auto;
+  margin: 10px;
+}
+.titleTeam{
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+.subtitleTeam{
+  font-size: 15px;
+  margin-top: 0;
+}
+#ivan {
+  background-image: url(../Teams/ImgTeams/ivan.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#steven{
+ background-image: url(../Teams/ImgTeams/stevee.PNG); 
+ background-size: cover;
+  background-repeat: no-repeat;
+}
+#juan{
+  background-image: url(../Teams/ImgTeams/juan.PNG); 
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+#luis{
+  background-image: url(../Teams/ImgTeams/luiss.PNG); 
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+#Matias{
+  background-image: url(../Teams/ImgTeams/mati.PNG); 
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+#Danimir{
+  background-image: url(../Teams/ImgTeams/Danimir.PNG); 
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+#Emmanuel{
+  background-image: url(../Teams/ImgTeams/emma.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+#beto{
+  background-image: url(../Teams/ImgTeams/beto.PNG); 
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
