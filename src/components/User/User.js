@@ -90,42 +90,7 @@ const UserRegister = () => {
 
   //Validation using Yup
   const validationSchema = Yup.object({
-    email: Yup.string()
-      .required("Es necesario llenar este campo")
-      .email("El email no es válido")
-      .trim("Elimine los espacios"),
-    password: Yup.string()
-      .required("Es necesario llenar este campo.")
-      .matches(
-        /^.*(?=.{4,})(?=.*\d)((?=.*[a-z]){1})((?=.*[A-Z]){1}).*$/,
-        " La contraseña debe ser alfanumérica de min 4 Caracteres."
-      )
-      .trim("Elimine los espacios"),
-    name: Yup.string().required("Es necesario llenar este campo"),
-    surname: Yup.string().required("Es necesario llenar este campo"),
-    phone: Yup.string()
-      .matches(
-        /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
-        "El número no es válido."
-      )
-      .required("Es necesario llenar este campo.")
-      .trim("Elimine los espacios"),
-
-    address: Yup.string().required("Es necesario llenar este campo."),
-    age: Yup.string().required("Es necesario llenar este campo."),
-    document: Yup.string()
-      .required("Es necesario llenar este campo.")
-      .trim("Elimine los espacios"),
-    phone2: Yup.string()
-      .required("Es necesario llenar este campo.")
-      .matches(
-        /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
-        "El número no es válido."
-      )
-      .trim("Elimine los espacios"),
-    state: Yup.string().required("Es necesario llenar este campo."),
-    city: Yup.string().required("Es necesario llenar este campo."),
-    country: Yup.string().required("Es necesario llenar este campo."),
+  
   });
 
   //Hooks for Redux
@@ -167,7 +132,9 @@ const UserRegister = () => {
   useEffect(() => {
     dispatch(getCountry());
   }, [dispatch]);
-
+function prueba(){
+  console.log(initialValues)
+}
   return (
     <div className="container-img-form">
       <Formik
@@ -175,41 +142,9 @@ const UserRegister = () => {
         validationSchema={validationSchema}
         onSubmit={onSubmit}
       >
-        {(props) => {
-          const { values, setFieldValue } = props;
-          return (
-            <Form>
-              <UploadWrapper image={image}>
-                <div
-                  className="image"
-                  onClick={() => widgetApi.current.openDialog()}
-                >
-                  <img src={image} alt="uploaded" />
-                </div>
-                <Widget
-                  ref={widgetApi}
-                  localeTranslations={translation}
-                  crop="1:1"
-                  publicKey="demopublickey"
-                  id="photo"
-                  name="photo"
-                  value={values.photo}
-                  onChange={(e) => setFieldValue("photo", e.cdnUrl)}
-                  clearable
-                  imagesOnly
-                  previewStep
-                  onFileSelect={(file) => {
-                    if (!file) {
-                      console.log("File removed from widget");
-                      setImage(null);
-                    }
-                    file?.done((fileInfo) => {
-                      console.log("File uploaded: ", fileInfo.cdnUrl);
-                      setImage(fileInfo.cdnUrl);
-                    });
-                  }}
-                />
-              </UploadWrapper>
+       
+            <Form onChange={prueba}>
+             
 
               <div className="sign-spaces">
                 <label className="sign-label">Nombres*:</label>
@@ -225,203 +160,22 @@ const UserRegister = () => {
                   name="name"
                 />
               </div>
-              <div className="sign-spaces">
-                <label className="sign-label">Apellidos*:</label>
-                <Field
-                  className="sign-inputs"
-                  id="surname"
-                  name="surname"
-                  type="text"
-                  placeholder="Apellido"
-                />
-                <ErrorMessage
-                  render={(msg) => <div className="error">{msg}</div>}
-                  name="surname"
-                />
-              </div>
-              <div className="sign-spaces">
-                <label className="sign-label">Fecha de Nacimiento*:</label>
-                <Field
-                  className="sign-inputs"
-                  name="age"
-                  id="age"
-                  type="date"
-                  placeholder="Edad"
-                />
-                <ErrorMessage
-                  render={(msg) => <div className="error">{msg}</div>}
-                  name="age"
-                />
-              </div>
-              <div className="sign-spaces">
-                <label className="sign-label">Email*:</label>
-                <Field
-                  className="sign-inputs"
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="Email"
-                />
-                <ErrorMessage
-                  render={(msg) => <div className="error">{msg}</div>}
-                  name="email"
-                />
-              </div>
-              <div className="sign-spaces">
-                <label className="sign-label">Contraseña*:</label>
-                <Field
-                  className="sign-inputs"
-                  id="password"
-                  name="password"
-                  type="password"
-                  placeholder="Contraseña"
-                />
-                <ErrorMessage
-                  render={(msg) => <div className="error">{msg}</div>}
-                  name="password"
-                />
-              </div>
-              <div className="sign-spaces">
-                <label className="sign-label">Celular*:</label>
-                <Field
-                  className="sign-inputs"
-                  id="phone"
-                  name="phone"
-                  type="tel"
-                  placeholder="Celular"
-                />
-                <ErrorMessage
-                  render={(msg) => <div className="error">{msg}</div>}
-                  name="phone"
-                />
-              </div>
-              <div className="sign-spaces">
-                <label className="sign-label">Celular Altenativo:</label>
-                <Field
-                  className="sign-inputs"
-                  id="phone2"
-                  name="phone2"
-                  type="tel"
-                  placeholder="Celular Alternativo"
-                />
-                <ErrorMessage
-                  render={(msg) => <div className="error">{msg}</div>}
-                  name="phone2"
-                />
-              </div>
+              
+              
+              
+             
+              
+              
 
-              <div className="sign-spaces">
-                <label className="sign-label">Doc. de Identificación*:</label>
-                <Field
-                  className="sign-inputs"
-                  id="document"
-                  name="document"
-                  type="text"
-                  placeholder="Documento de Identificación"
-                />
-                <ErrorMessage
-                  render={(msg) => <div className="error">{msg}</div>}
-                  name="document"
-                />
-              </div>
-              <div className="sign-spaces">
-                <label className="sign-label">Dirección*:</label>
-                <Field
-                  className="sign-inputs"
-                  id="address"
-                  name="address"
-                  type="text"
-                  placeholder="Dirección"
-                />
-                <ErrorMessage
-                  render={(msg) => <div className="error">{msg}</div>}
-                  name="address"
-                />
-              </div>
+              
+              
 
-              <div className="sign-space">
-                <label className="sign-label">País*:</label>
-                <Field
-                  className="sign-inputs"
-                  as="select"
-                  name="country"
-                  id="country"
-                  value={values.country}
-                  onChange={(e) => {
-                    const { value } = e.target;
-                    setFieldValue("country", value);
-                    dispatch(GetStatebyCountry(value));
-                  }}
-                >
-                  <option value="" key="paises" disabled>
-                    Selecciona tu país.
-                  </option>
-                  {country?.map((country) => (
-                    <option value={country.name} key={country.id}>
-                      {country.name}
-                    </option>
-                  ))}
-                </Field>
-                <ErrorMessage
-                  render={(msg) => <div className="error">{msg}</div>}
-                  name="country"
-                />
-              </div>
+      
 
-              <div className="sign-spaces">
-                <label className="sign-label">Estado*:</label>
-                <Field
-                  className="sign-inputs"
-                  as="select"
-                  name="state"
-                  value={values.state}
-                  onChange={(e) => {
-                    const { value } = e.target;
-                    setFieldValue("state", value);
-                    dispatch(GetCitiesByState(value));
-                  }}
-                >
-                  <option value="" key="estados" disabled>
-                    Selecciona tu estado.
-                  </option>
-                  {states?.map((state) => (
-                    <option value={state.name} key={state.id}>
-                      {state.name}
-                    </option>
-                  ))}
-                </Field>
-                <ErrorMessage
-                  render={(msg) => <div className="error">{msg}</div>}
-                  name="state"
-                />
-              </div>
-              <div className="sign-spaces">
-                <label className="sign-label">Ciudad*:</label>
-                <Field
-                  className="sign-inputs"
-                  as="select"
-                  name="city"
-                  id="city"
-                  value={values.city}
-                  onChange={(e) => {
-                    const { value } = e.target;
-                    setFieldValue("city", value);
-                  }}
-                >
-                  <option value="" key="ciudades" disabled>
-                    Selecciona tu ciudad.
-                  </option>
-                  {cities[0]?.cities?.map((city) => (
-                    <option value={city.name} key={city.id}>
-                      {city.name}
-                    </option>
-                  ))}
-                </Field>
-                <ErrorMessage
-                  render={(msg) => <div className="error">{msg}</div>}
-                  name="city"
-                />
-              </div>
+              
+            
+               
+              
 
               <div className="sign-button">
                 <button
@@ -433,8 +187,7 @@ const UserRegister = () => {
                 </button>
               </div>
             </Form>
-          );
-        }}
+         
       </Formik>
     </div>
   );
